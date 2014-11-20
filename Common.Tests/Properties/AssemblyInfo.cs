@@ -5,11 +5,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MassivePixel.Common.WP8")]
+[assembly: AssemblyTitle("Common.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MassivePixel.Common.WP8")]
+[assembly: AssemblyProduct("Common.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4579b3aa-a14a-4dff-85ed-ee80f62d746d")]
+[assembly: Guid("a29767a4-d44d-48b5-80e7-ba1fb4723216")]
 
 // Version information for an assembly consists of the following four values:
 //
