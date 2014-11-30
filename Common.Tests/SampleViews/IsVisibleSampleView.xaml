@@ -1,0 +1,48 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Common.Tests.SampleViews.IsVisibleSamplePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:attachedProperties="clr-namespace:MassivePixel.Common.AttachedProperties;assembly=MassivePixel.Common.WP8"
+    xmlns:sampleViews="clr-namespace:Common.Tests.SampleViews"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    d:DataContext="{d:DesignInstance sampleViews:IsVisibleSampleViewModel,
+    IsDesignTimeCreatable=True}">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="SAMPLES" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="IsVisible" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+
+            <TextBlock Text="I am visible!"
+                       Style="{StaticResource PhoneTextExtraLargeStyle}"
+                       attachedProperties:Alt.IsVisible="{Binding IsVisible}"
+                       />
+
+            <Border Margin="0,25" />
+            <TextBlock Text="Press the button to toggle visibility"
+                       Style="{StaticResource PhoneTextSmallStyle}"
+                       />
+            <Button Content="Toggle visibility"
+                    Command="{Binding ToggleVisibleCommand}"
+                    />
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,52 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Common.Tests.SampleViews.ChainingConverterSamplePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:c="clr-namespace:MassivePixel.Common.Converters;assembly=MassivePixel.Common.WP8"
+    xmlns:sampleViews="clr-namespace:Common.Tests.SampleViews"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    d:DataContext="{d:DesignInstance sampleViews:ChainingConverterSampleViewModel, d:IsDesignTimeCreatable=True}">
+
+    <phone:PhoneApplicationPage.Resources>
+        <c:ChainingConverter x:Key="EnumToStringConverter">
+            
+            <c:ParameterizedConverterWrapper Parameter="First">
+                <c:EnumToBoolConverter />
+            </c:ParameterizedConverterWrapper>
+
+            <c:InvertBoolConveter />
+            
+            <c:BooleanToObjectConverter
+                TrueValue="Hello"
+                FalseValue="World"
+                />
+            
+        </c:ChainingConverter>
+    </phone:PhoneApplicationPage.Resources>
+        
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="SAMPLES" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="chaining converter" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Text="{Binding MyEnum, Converter={StaticResource EnumToStringConverter}}" />
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
