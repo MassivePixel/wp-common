@@ -6,7 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:common="clr-namespace:MassivePixel.Common;assembly=MassivePixel.Common.WP8"
+    xmlns:attachedProperties="clr-namespace:MassivePixel.Common.AttachedProperties;assembly=MassivePixel.Common.WP8"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -52,7 +52,7 @@
 
             <TextBlock Text="I am visible!"
                        Style="{StaticResource PhoneTextExtraLargeStyle}"
-                       common:Alt.IsVisible="{Binding IsVisible}"
+                       attachedProperties:Alt.IsVisible="{Binding IsVisible}"
                        />
             
             <Border Margin="0,25" />

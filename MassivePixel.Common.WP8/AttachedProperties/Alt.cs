@@ -1,13 +1,12 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
-namespace MassivePixel.Common
+namespace MassivePixel.Common.AttachedProperties
 {
     /// <summary>
     /// Definition of alternative attached properties for various
     /// controls.
     /// </summary>
-    public static class Alt
+    public static partial class Alt
     {
         public static readonly DependencyProperty IsVisibleProperty = DependencyProperty.RegisterAttached(
             "IsVisible", typeof(bool?), typeof(Alt), new PropertyMetadata(default(bool?), IsVisibleChangedCallback));
