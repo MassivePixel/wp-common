@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{9042F7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Tests", "Common.Tests\Common.Tests.csproj", "{96C5E9FE-49F8-4D9F-BC89-CD50EEBCE819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Massivepixel.Common.Universal", "Massivepixel.Common.Universal\Massivepixel.Common.Universal.csproj", "{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,14 @@ Global
 		{96C5E9FE-49F8-4D9F-BC89-CD50EEBCE819}.Release|x86.ActiveCfg = Release|x86
 		{96C5E9FE-49F8-4D9F-BC89-CD50EEBCE819}.Release|x86.Build.0 = Release|x86
 		{96C5E9FE-49F8-4D9F-BC89-CD50EEBCE819}.Release|x86.Deploy.0 = Release|x86
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F8C2DC8E-F9CB-4AA7-82FC-F63BD8046B54}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
