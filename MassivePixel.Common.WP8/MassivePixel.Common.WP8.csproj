@@ -87,6 +87,8 @@
     <Compile Include="Converters\BooleanToObject.cs" />
     <Compile Include="Converters\ChainingConverter.cs" />
     <Compile Include="Converters\EnumToBool.cs" />
+    <Compile Include="Converters\EnumToValue.cs" />
+    <Compile Include="Converters\EnumValueMapping.cs" />
     <Compile Include="Converters\IfNullUseParameter.cs" />
     <Compile Include="Converters\InvertBool.cs" />
     <Compile Include="Converters\Wrapper.cs" />
