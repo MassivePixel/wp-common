@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Globalization;
-using System.Windows;
 using System.Windows.Data;
 using System.Windows.Markup;
 
 namespace MassivePixel.Common.Converters
 {
     [ContentProperty("Converters")]
-    public class ChainingConverter : DependencyObject, IValueConverter
+    public class ChainingConverter : IValueConverter
     {
-        private Collection<IValueConverter> _values;
+        private Collection<IValueConverter> values;
 
         public Collection<IValueConverter> Converters
         {
             get
             {
                 // Defer creating collection until needed
-                if (null == _values)
+                if (null == values)
                 {
-                    _values = new Collection<IValueConverter>();
+                    values = new Collection<IValueConverter>();
                 }
-                return _values;
+                return values;
             }
         }
 

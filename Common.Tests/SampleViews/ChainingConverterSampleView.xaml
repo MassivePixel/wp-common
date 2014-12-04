@@ -19,13 +19,13 @@
     <phone:PhoneApplicationPage.Resources>
         <c:ChainingConverter x:Key="EnumToStringConverter">
             
-            <c:ParameterizedConverterWrapper Parameter="First">
-                <c:EnumToBoolConverter />
-            </c:ParameterizedConverterWrapper>
+            <c:Wrapper Parameter="First">
+                <c:EnumToBool />
+            </c:Wrapper>
 
-            <c:InvertBoolConveter />
+            <c:InvertBool />
             
-            <c:BooleanToObjectConverter
+            <c:BooleanToObject
                 TrueValue="Hello"
                 FalseValue="World"
                 />

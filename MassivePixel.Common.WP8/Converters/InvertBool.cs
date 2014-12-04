@@ -4,7 +4,7 @@ using System.Windows.Data;
 
 namespace MassivePixel.Common.Converters
 {
-    public class InvertBoolConveter : IValueConverter
+    public class InvertBool : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

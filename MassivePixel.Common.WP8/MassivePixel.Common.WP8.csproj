@@ -84,11 +84,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AttachedProperties\Alt.IsVisible.cs" />
-    <Compile Include="Converters\BooleanToObjectConverter.cs" />
+    <Compile Include="Converters\BooleanToObject.cs" />
     <Compile Include="Converters\ChainingConverter.cs" />
-    <Compile Include="Converters\EnumToBoolConverter.cs" />
-    <Compile Include="Converters\InvertBoolConveter.cs" />
-    <Compile Include="Converters\ParameterizedConverterWrapper.cs" />
+    <Compile Include="Converters\EnumToBool.cs" />
+    <Compile Include="Converters\IfNullUseParameter.cs" />
+    <Compile Include="Converters\InvertBool.cs" />
+    <Compile Include="Converters\Wrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

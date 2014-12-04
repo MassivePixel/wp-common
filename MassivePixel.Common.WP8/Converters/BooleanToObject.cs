@@ -5,11 +5,11 @@ using System.Windows.Data;
 
 namespace MassivePixel.Common.Converters
 {
-    public class BooleanToObjectConverter : DependencyObject, IValueConverter
+    public class BooleanToObject : DependencyObject, IValueConverter
     {
         #region TrueValue dependency property
         public static readonly DependencyProperty TrueValueProperty = DependencyProperty.Register(
-            "TrueValue", typeof(object), typeof(BooleanToObjectConverter), new PropertyMetadata(default(object)));
+            "TrueValue", typeof(object), typeof(BooleanToObject), new PropertyMetadata(default(object)));
 
         public object TrueValue
         {
@@ -20,7 +20,7 @@ namespace MassivePixel.Common.Converters
 
         #region FalseValue dependency property
         public static readonly DependencyProperty FalseValueProperty = DependencyProperty.Register(
-            "FalseValue", typeof(object), typeof(BooleanToObjectConverter), new PropertyMetadata(default(object)));
+            "FalseValue", typeof(object), typeof(BooleanToObject), new PropertyMetadata(default(object)));
 
         public object FalseValue
         {

@@ -7,11 +7,11 @@ using System.Windows.Markup;
 namespace MassivePixel.Common.Converters
 {
     [ContentProperty("Converter")]
-    public class ParameterizedConverterWrapper : DependencyObject, IValueConverter
+    public class Wrapper : DependencyObject, IValueConverter
     {
         #region Converter dependency property
         public static readonly DependencyProperty ConverterProperty = DependencyProperty.Register(
-            "Converter", typeof(IValueConverter), typeof(ParameterizedConverterWrapper), new PropertyMetadata(default(IValueConverter)));
+            "Converter", typeof(IValueConverter), typeof(Wrapper), new PropertyMetadata(default(IValueConverter)));
 
         public IValueConverter Converter
         {
@@ -22,7 +22,7 @@ namespace MassivePixel.Common.Converters
 
         #region Parameter dependency property
         public static readonly DependencyProperty ParameterProperty = DependencyProperty.Register(
-            "Parameter", typeof(object), typeof(ParameterizedConverterWrapper), new PropertyMetadata(default(object)));
+            "Parameter", typeof(object), typeof(Wrapper), new PropertyMetadata(default(object)));
 
         public object Parameter
         {
@@ -33,7 +33,7 @@ namespace MassivePixel.Common.Converters
 
         #region DefaultReturnValue dependency property
         public static readonly DependencyProperty DefaultReturnValueProperty = DependencyProperty.Register(
-            "DefaultReturnValue", typeof(object), typeof(ParameterizedConverterWrapper), new PropertyMetadata(default(object)));
+            "DefaultReturnValue", typeof(object), typeof(Wrapper), new PropertyMetadata(default(object)));
 
         public object DefaultReturnValue
         {

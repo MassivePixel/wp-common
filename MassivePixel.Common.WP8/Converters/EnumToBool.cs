@@ -4,7 +4,7 @@ using System.Windows.Data;
 
 namespace MassivePixel.Common.Converters
 {
-    public class EnumToBoolConverter : IValueConverter
+    public class EnumToBool : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
