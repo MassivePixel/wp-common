@@ -6,6 +6,7 @@ using Windows.UI.Xaml;
 #else
 using System.Windows;
 #endif
+
 namespace MassivePixel.Common
 {
     public class DependencyObject<TDependencyClass> : DependencyObject
