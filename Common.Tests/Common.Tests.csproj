@@ -103,6 +103,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SampleDependencyObject.cs" />
     <Compile Include="SampleViews\ChainingConverterSampleView.xaml.cs">
       <DependentUpon>ChainingConverterSampleView.xaml</DependentUpon>
     </Compile>

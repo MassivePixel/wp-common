@@ -92,6 +92,8 @@
     <Compile Include="Converters\IfNullUseParameter.cs" />
     <Compile Include="Converters\InvertBool.cs" />
     <Compile Include="Converters\Wrapper.cs" />
+    <Compile Include="DependencyObject.cs" />
+    <Compile Include="Member.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Navigation\INavigateable.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
