@@ -93,6 +93,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DependencyObject\InheritedDependencyObject.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -103,7 +104,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SampleDependencyObject.cs" />
+    <Compile Include="DependencyObject\SampleDependencyObject.cs" />
     <Compile Include="SampleViews\ChainingConverterSampleView.xaml.cs">
       <DependentUpon>ChainingConverterSampleView.xaml</DependentUpon>
     </Compile>

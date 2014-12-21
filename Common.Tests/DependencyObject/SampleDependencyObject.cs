@@ -1,8 +1,7 @@
-﻿using System.Text.RegularExpressions;
-using System.Windows;
+﻿using System.Windows;
 using MassivePixel.Common;
 
-namespace Common.Tests
+namespace Common.Tests.DependencyObjectTests
 {
     public class SampleDependencyObject : DependencyObject<SampleDependencyObject>
     {
